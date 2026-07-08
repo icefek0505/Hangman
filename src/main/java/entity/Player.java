@@ -1,7 +1,7 @@
 package entity;
 import tool.ConsoleHandler;
 import java.util.HashSet;
-public class Player implements Resetable {
+public class Player {
     private int mistakes=0;
     private final HashSet<Character> assumptions = new HashSet<Character>();
     public int getMistakes(){

@@ -8,22 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class WordsExtracter {
-     private static final Path filePath = Paths.get("src","main","resources","Nouns.txt");
+     private static final Path path = Paths.get("src","main","resources","Nouns.txt");
 
-     public static String[] getExtracted(){
-          return  extract();
-     }
-
-     private static String[] extract(){
+     public static List<String> getLines(){
           List<String> wordsList = new ArrayList<>();
 
-          try(BufferedReader br = new BufferedReader(new FileReader(filePath.toFile()))){
+          try(BufferedReader br = new BufferedReader(new FileReader(path.toFile()))){
                while(br.ready()){
                     wordsList.add(br.readLine());
                }
           }catch (IOException e){
                System.out.println(e.getMessage());
           }
-          return wordsList.toArray(new String[0]);
+          return wordsList;
      }
 }

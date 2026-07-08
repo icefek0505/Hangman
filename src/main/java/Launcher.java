@@ -1,4 +1,4 @@
-import entity.HangmanUI;
+import entity.HangmanUi;
 import entity.Judge;
 import entity.Player;
 import entity.WordPicker;
@@ -8,7 +8,7 @@ public class Launcher {
     private static final int MAX_MISTAKES = 5;
 
     public static void main(String[] args){
-        HangmanUI hangmanUI = new HangmanUI();
+        HangmanUi hangmanUI = new HangmanUi();
         Judge judge = new Judge();
         WordPicker wordPicker = new WordPicker();
         Player player = new Player();

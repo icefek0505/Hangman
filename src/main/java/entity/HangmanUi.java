@@ -1,11 +1,11 @@
 package entity;
 
-public class HangmanUI {
+public class HangmanUi {
 
     public void drawWelcomeMessage(){
         System.out.println();
         System.out.println("================================");
-        System.out.println("=   Game session was started   =");
+        System.out.println("=    ИГРОВАЯ СЕССИЯ НАЧАЛАСЬ   =");
         System.out.println("================================");
         System.out.println();
     }
@@ -61,6 +61,8 @@ public class HangmanUI {
         System.out.println("================================");
         System.out.println();
     }
+
+
 
     public void drawHangman(int userMistakes,String word){
         System.out.println("================================");
